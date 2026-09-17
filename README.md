@@ -3,7 +3,7 @@
 
 # LearnForge AI — AI-Powered Course Generator
 
-# This is the final repo as I tried this and did a lot of mistake so this is the final project 
+# This is the final repo as I tried this and did a lot of mistake in previous build , So this is the fresh repo of final project 
 
 
 Turn any topic into a structured, multi-module course: type a prompt like *"Intro to React
