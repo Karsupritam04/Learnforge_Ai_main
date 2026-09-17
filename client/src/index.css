@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-paper-50 text-ink-900 font-sans antialiased;
+}
+
+::selection {
+  @apply bg-moss-400/30;
+}
+
+.focus-ring:focus-visible {
+  @apply outline-none ring-2 ring-moss-500 ring-offset-2 ring-offset-paper-50;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

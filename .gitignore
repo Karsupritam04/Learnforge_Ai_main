@@ -1,0 +1,8 @@
+server/target/
+client/node_modules/
+client/dist/
+.env
+.env.local
+.DS_Store
+.idea/
+.vscode/
