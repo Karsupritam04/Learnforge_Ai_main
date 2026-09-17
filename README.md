@@ -150,16 +150,7 @@ client/
 Swap generators by setting `AI_PROVIDER=openai` (or add another implementation of
 `AiCourseGeneratorService`, e.g. for Hugging Face — the interface is the extension point).
 
-## Extending further
 
-- **Hugging Face provider**: add a new `@Service` implementing `AiCourseGeneratorService`,
-  guarded by `@ConditionalOnProperty(name = "ai.provider", havingValue = "huggingface")`,
-  mirroring `OpenAiCourseGeneratorService`.
-- **CI/CD**: add `.github/workflows/backend.yml` (build + `mvn -B verify`, then deploy to
-  Render via their deploy hook) and `.github/workflows/frontend.yml` (`npm ci && npm run build`,
-  then let Vercel's GitHub integration handle deploy-on-push).
-- **PDF export of a whole course/module**: `LessonPDFExporter` captures one lesson's DOM;
-  extend it to loop over a module's lessons and append pages to the same `jsPDF` instance.
 
 ## Deployment
 
